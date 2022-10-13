@@ -17,7 +17,7 @@ form {
     display: flex;
     justify-content: flex-end;
     margin: auto;
-    background-image: url("/images/ren-ran-bBiuSdck8tU-unsplash.jpg");
+    background-image: url("../images/ren-ran-bBiuSdck8tU-unsplash.jpg");
     background-size: 65%;
     background-color: #8a8989;
     height: 100vh;
