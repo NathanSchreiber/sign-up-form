@@ -24,44 +24,46 @@
                 <p class="desc-main">
                     This is not a real online service! You know you need something
                     like this in your life to help you realize your deepest dreams.
-                    Sign up now to get started.
+                    Sign up now to get started. 
                 </p>
-                <p class="desc-hook">
-                    You <span class="know">know</span> you want to.
+                <p class="desc-required">
+                    <strong>Required is shown with *</strong>
                 </p>
             </div>
             <div class="form-inputs">
                 <div class="form-inputs-container">
                     <p class="input-head">Let's do this!</p>
                     <div class="input-div">
-                        <label for="first-name">FIRST NAME</label>
-                        <input type="text" name="user-fn" id="first-name">
+                        <label for="first-name">FIRST NAME*</label>
+                        <input type="text" name="user-fn" id="first-name" required>
                     </div>
                     <div class="input-div right-side">
-                        <label for="last-name">LAST NAME</label>
-                        <input type="text" name="user-last-name" id="last-name">
+                        <label for="last-name">LAST NAME*</label>
+                        <input type="text" name="user-last-name" id="last-name" required>
                     </div>
                     <div class="input-div">
-                        <label for="email">EMAIL</label>
-                        <input type="email" name="user-email" id="email">
+                        <label for="email">EMAIL*</label>
+                        <input type="email" name="user-email" id="email" required
+                        placeholder="name@example.com">
                     </div>
                     <div class="input-div right-side">
                         <label for="phone">PHONE NUMBER</label>
-                        <input type="tel" name="phone-number" id="phone" pattern="[0-9]{3}[-.]?[0-9]{3}[-.]?[0-9]{4}">
+                        <input type="tel" name="phone-number" id="phone" pattern="[0-9]{3}[-.]?[0-9]{3}[-.]?[0-9]{4}"
+                        placeholder="xxx-xxx-xxxx">
                     </div>
                     <div class="input-div">
-                        <label for="password">PASSWORD</label>
-                        <input type="password" name="password" id="password">
+                        <label for="password">PASSWORD*</label>
+                        <input type="password" name="password" id="password" required>
                     </div>
                     <div class="input-div right-side">
-                        <label for="confirm">CONFIRM PASSWORD</label>
-                        <input type="password" name="confirm" id="confirm">
+                        <label for="confirm">CONFIRM PASSWORD*</label>
+                        <input type="password" name="confirm" id="confirm" required>
                     </div>
                 </div>
             </div>
             <div class="submit-area">
                 <div class="form-button">
-                    <button type="submit">Create Account</button>
+                    <button type="submit" id="submit">Create Account</button>
                 </div>
                 <div class="log-in">
                     <p>Already have an account? <a class="log-in-link" href="#">Log in</a></p>
@@ -69,5 +71,7 @@
             </div>
         </div>
     </form>
+    
+    <script src="./js/script.js"></script>
 </body>
 </html>

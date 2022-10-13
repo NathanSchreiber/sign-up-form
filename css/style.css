@@ -91,7 +91,7 @@ p.desc-sign-up {
     padding-top: 0;
 }
 
-span.know {
+span.required {
     font-style: italic;
     padding-right: 2px;
 }
@@ -130,7 +130,7 @@ input[type="password"] {
     display: block;
     width: 200px;
     height: 20px;
-    border: 1px solid rgb(226, 226, 226);
+    border: 1px solid #e2e2e2;
 }
 
 label {
@@ -159,6 +159,7 @@ div.form-inputs-container > p {
 p.input-head {
     margin-top: 0;
 }
+
 /* End of input area styles */
 
 div.submit-area {
@@ -173,6 +174,30 @@ div.form-button > button {
     border: none;
     border-radius: 5px;
 }
+button#submit:hover {
+    cursor: pointer;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid skyblue;
+    box-shadow: 1px 1px 2px 0 #c1e1ed;
+}
+
+/* Validity styles below */
+
+input.error {
+    border: 2px solid #fb7474;
+    box-shadow: 1px 1px 2px 0 #f59999;
+}
+
+input.error:focus {
+    outline: none;
+    border: 2px solid #fb7474;
+    box-shadow: 1px 1px 2px 0 #f59999;
+}
+
+/* end of validity styles */
 
 @media only screen and (max-width: 918px) {
     input[type="text"],
@@ -234,6 +259,12 @@ div.form-button > button {
     }
     form {
         background-size: 90%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .sidebar-title {
+        font-size: 1rem;
     }
 }
 
