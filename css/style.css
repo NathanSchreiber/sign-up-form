@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(121, 121, 121);
+}
+
+body {
+    margin: 0;
+}
+
+form {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin: auto;
+    background-image: url("/images/ren-ran-bBiuSdck8tU-unsplash.jpg");
+    background-size: 65%;
+    background-color: #8a8989;
+    height: 100vh;
+    width: clamp(700px, 90%, 95%);
+}
+
+div.container {
+    position: relative;
+}
+
+div.sidebar {
+    display: flex;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    color: rgb(249, 247, 247);
+    background-color: #444343dd;
+    width: 30%;
+}
+
+.sidebar-img > img {
+    width: 60px;
+    margin: 0;
+    padding: 0;
+    margin-left: 5px;
+}
+
+.sidebar-title {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-self: center;
+    font-size: 1.75rem;
+    margin-left: 8px;
+}
+
+p.background-credit {
+    color: #7d7b7b;
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    left: 4rem;
+}
+
+a.background-credit {
+    color: #7d7b7b;
+}
+
+.log-in > p {
+    font-size: 12px;
+}
+
+.log-in-link {
+    color: #487348;
+    text-decoration: none;
+}
+
+div.description {
+    margin-left: 4rem;
+    width: 68%;
+    margin-top: max(1rem, 8rem);
+}
+
+p.desc-main {
+    margin-bottom: 0;
+}
+
+p.desc-sign-up {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+span.know {
+    font-style: italic;
+    padding-right: 2px;
+}
+
+/* Input area styles below */
+div.container {
+    width: 70%;
+    background-color: #fcfafa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+div.form-inputs {
+    width: 99%;
+    margin: auto;
+    padding: 1rem 0;
+    background-color: white;
+    box-shadow: 0 2px 5px 0 #c5c4c4;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    margin-bottom: 2rem;
+}
+
+div.form-inputs-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 700px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    display: block;
+    width: 200px;
+    height: 20px;
+    border: 1px solid rgb(226, 226, 226);
+}
+
+label {
+    font-size: 11px;
+    color: #545454;
+    font-weight: 900;
+}
+
+div.input-div {
+    margin: 5px 0;
+    margin-right: 2rem;
+    margin-left: 4rem;
+}
+
+div.input-div.right-side {
+    margin-right: 0;
+}
+
+div.form-inputs-container > p {
+    width: 100%;
+    margin-left: 4rem;
+    font-size: 1.2rem;
+    color: #545454;
+}
+
+p.input-head {
+    margin-top: 0;
+}
+/* End of input area styles */
+
+div.submit-area {
+    margin-left: 2rem;
+    margin-bottom: 7rem;
+}
+div.form-button > button {
+    width: 175px;
+    height: 34px;
+    background-color: #487348;
+    color: rgb(243, 241, 241);
+    border: none;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 918px) {
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="password"] {
+        width: 150px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    form {
+        width: 100%;
+        background-size: 70%;
+    }
+    .sidebar-title {
+        font-size: 1.75rem;
+    }
+    p.background-credit {
+        font-size: 10px;
+        left: 2rem;
+    }
+    div.form-inputs {
+        padding-bottom: auto;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="password"] {
+        width: 175px;
+    }
+    div.input-div {
+        margin-left: 2rem;
+    }
+    div.form-inputs-container > p {
+        margin-left: 2rem;
+    }
+    div.description {
+        margin-left: 2rem;
+        width: 90%;
+        top: 1rem;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .sidebar-title {
+        font-size: 1.5rem;
+    }
+    p.background-credit {
+        font-size: 10px;
+        max-width: 120px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="password"] {
+        width: 200px;
+        margin-right: 0;
+    }
+    form {
+        background-size: 90%;
+    }
+}
+
+@media only screen and (max-height: 500px) {
+    form {
+        height: 100%;
+    }
+}

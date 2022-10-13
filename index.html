@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    
+    <form action="" method="get">
+        <div class="sidebar">
+            <span class="sidebar-img"><img src="./images/tree-g9ce174d97_640.png" alt="Tree Logo"></span>
+            <p class="sidebar-title">Plant Life</p>
+            
+        </div>
+        <p class="background-credit">
+            Photo by <a class="background-credit" href="https://unsplash.com/@renran?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ren Ran</a> on <a class="background-credit" href="https://unsplash.com/s/photos/background?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        </p>
+        <div class="container">
+            <div class="description">
+                <p class="desc-main">
+                    This is not a real online service! You know you need something
+                    like this in your life to help you realize your deepest dreams.
+                    Sign up now to get started.
+                </p>
+                <p class="desc-hook">
+                    You <span class="know">know</span> you want to.
+                </p>
+            </div>
+            <div class="form-inputs">
+                <div class="form-inputs-container">
+                    <p class="input-head">Let's do this!</p>
+                    <div class="input-div">
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" name="user-fn" id="first-name">
+                    </div>
+                    <div class="input-div right-side">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" name="user-last-name" id="last-name">
+                    </div>
+                    <div class="input-div">
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="user-email" id="email">
+                    </div>
+                    <div class="input-div right-side">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" name="phone-number" id="phone" pattern="[0-9]{3}[-.]?[0-9]{3}[-.]?[0-9]{4}">
+                    </div>
+                    <div class="input-div">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                    <div class="input-div right-side">
+                        <label for="confirm">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirm" id="confirm">
+                    </div>
+                </div>
+            </div>
+            <div class="submit-area">
+                <div class="form-button">
+                    <button type="submit">Create Account</button>
+                </div>
+                <div class="log-in">
+                    <p>Already have an account? <a class="log-in-link" href="#">Log in</a></p>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
